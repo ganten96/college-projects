@@ -1,0 +1,1 @@
+1. In file interpreter.js, I would replace E.update(E.getCloEnv(f)), on line 77 with E.update(E.createEnv(E.getCloBody(f), envir),

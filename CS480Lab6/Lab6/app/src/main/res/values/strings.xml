@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lab6</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_create_account">CreateAccount</string>
+    <string name="title_activity_calculator">Calculator</string>
+    <string name="title_activity_equation_list">EquationList</string>
+</resources>

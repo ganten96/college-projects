@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Forest Space Ball</title>
+</head>
+<body>
+    <div>
+        <h1>Forest Space Ball Manual</h1>
+        <h3>Game Authors: Matt Zahm and Nick Ganter</h3>
+        <p>Welcome! The objective of this game is to capture the ball in your goal. You are a slow, bulky space station, and your enemy is a sleek and fast space cruiser! In order to capture the ball you must use your wit and cunning to outsmart the evil space cruiser! The blue goal is your goal, and the red goal is the enemy's goal. Once you nab the ball, fly for your life, using the trees as cover. Once you touch your goal, you score a point! You will know when you score, because the entire map lights up in a dazzling blue color! Don't let the enemy score though, because then the map will turn red, and sadness will occur. Be careful not to die though! If you die you drop the ball and respawn, which gives the enemy a chance to score! Once you, or the villanous space cruiser gets to 5 points, something amazing will happen!!We won't tell you here, because we want you to play the game to find out!</p>
+    </div>
+    <div>
+        <h1>Controls</h1>
+        <p>The controls are quite simple! Use the w,a,s,d keys to move around. W thrusts you forward, S thrusts you backwards, A strafes left, and D strafes right. Use P to pause the game. You can also look left and right by moving your mouse left and right! Use spacebar to shoot little laser balls that reflect off the wall. If you don't like the 3rd person view, you can switch to the 1st person view by using scrolling the mouse wheel, or by pressing the up or down arrow keys.</p>
+    </div>
+    <div>
+        <h1> Golly Gee Wiz Points!</h1>
+        <ul>
+            <li>
+                Colliding and Destructible Trees
+                <ul>
+                    <li>
+                        Trees stop your movement if you run into them
+                        but have no fear, you can shoot and destroy them to get them out of the way.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Bouncing Bullets
+                <ul>
+                    <li>
+                        Your bullets will ricochet around the arena using the true
+                        reflection model.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Skybox
+                <ul>
+                    <li>
+                        A skybox surrounds the arena to give it some more visual appeal.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Combat System
+                <ul>
+                    <li>
+                        You can shoot and destroy the enemy and he can you shoot and
+                        destroy you.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Respawn System
+                <ul>
+                    <li>
+                        Both you and the enemy will respawn somewhere near your goal
+                        after you've been destroyed.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                *Well Structured Code
+                <ul>
+                    <li>
+                        The code base has been designed to allow for very easy
+                        expansion of the game's systems. New weapons, multiple villains, and even using
+                        more than two teams and goals would be quick and easy to add.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+            *May or may not count toward GGW points, but we're pretty happy with it  ;-P
+    </div>
+    <div>
+        <h2>Additional Notes</h2>
+        <h3>Here is a breakdown of who did what</h3>
+        <ul>
+            <li>
+                Matt
+                <ul>
+                    <li>
+                        Spherical Texturing
+                        <ul>
+                            The enemy ship and the hero were both textured via the Spherical Texture Mapping technique.
+                        </ul>
+                    </li>
+                    <li>
+                        Reflection
+                        <ul>
+                            When you, the shots, or the enemy bounces off the wall, the true reflection model is used to calculate where the object will go.
+                        </ul>
+                    </li>
+                    <li>
+                        Trees
+                        <ul>
+                            The trees were made via a cone and a cylinder, each textured seperately using the glu built in mapping.
+                        </ul>
+                    </li>
+                    <li>
+                        Shooting System
+                        <ul>
+                            The shooting system was designed with a recharge period in mind. You can only shoot every 10 frames. Each shot depletes the shields of the victim until death.
+                        </ul>
+                    </li>
+                    <li>
+                        Pausing/Game Over conditions
+                        <ul>
+                            You may pause the game using P. Once the score of either team reaches 5, the victory conditions are met, and something awesome happens.
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Nick
+                <ul>
+                    <li>
+                        Skybox
+                        <ul>
+                            This technique uses cube mapping to produces a skybox. This skybox allows for a more "realistic" look to the horizon.
+                        </ul>
+                    </li>
+                    <li>
+                        3d Movement Controls
+                        <ul>
+                            Standard FPS controls were implemented with true mouse look.
+                        </ul>
+                    </li>
+                    <li>
+                        Score Lighting
+                        <ul>
+                            Every time a point is scored, the appropriate color shows up on the entire map, signifying your undoubted victory (or loss).
+                        </ul>
+                    </li>
+                    <li>
+                        Goal Conditions
+                        <ul>
+                            Once a player or villain "collides" with their appropiate goal, a point is scored.
+                        </ul>
+                    </li>
+                    <li>
+                        Team Options
+                        <ul>
+                            This flexible option allows you to assign teams to specific players, as well as colors and goals.
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

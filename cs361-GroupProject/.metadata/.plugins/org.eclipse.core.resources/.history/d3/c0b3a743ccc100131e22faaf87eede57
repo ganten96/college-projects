@@ -1,0 +1,12 @@
+import java.util.Date;
+import java.util.*;
+
+public class Student 
+{
+	private String firstName;
+	private String lastName;
+	private String middleInitial;
+	private int universityId;
+	private DateTime universityStartDate;
+	private Date universityEndDate;
+}

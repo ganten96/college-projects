@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="calculator.lab6.Calculator"
+                android:id="@+id/parentLayout">
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solve"
+            android:id="@+id/evaluate"
+            android:layout_column="16"
+            android:background="@drawable/right_button_press"
+            android:layout_alignTop="@+id/SaveEquation"
+            android:layout_centerHorizontal="true"
+            android:onClick="evalExpression"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Equation"
+        android:id="@+id/SaveEquation"
+        android:layout_alignTop="@+id/LoadEquation"
+        android:layout_toEndOf="@+id/evaluate"
+        android:onClick="saveEquation"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load Equation"
+        android:id="@+id/LoadEquation"
+        android:layout_marginBottom="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/evaluate"
+        android:onClick="getEquationsByUserId"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/expressionEnter"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/answer"
+        android:layout_marginTop="41dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/answer"
+        android:layout_alignEnd="@+id/SaveEquation"
+        android:layout_below="@+id/expressionEnter"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:background="#fffff7b0"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/varBox"
+        android:layout_below="@+id/answer"
+        android:layout_marginTop="45dp"
+        android:layout_above="@+id/SaveEquation"
+        android:layout_alignEnd="@+id/SaveEquation"
+        android:layout_alignParentStart="true"
+        android:hint="varname = value;"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/equationName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Equation Name"/>
+
+</RelativeLayout>

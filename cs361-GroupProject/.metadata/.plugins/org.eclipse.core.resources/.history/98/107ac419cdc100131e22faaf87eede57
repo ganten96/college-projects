@@ -1,0 +1,46 @@
+import java.util.Date;
+import java.util.*;
+
+public class Student 
+{
+	private String firstName;
+	private String lastName;
+	private String middleInitial;
+	private int universityId;
+	private Date universityStartDate;
+	private Date universityEndDate;
+	
+	/**
+	 * Constructor
+	 * @param fName Student's First Name
+	 * @param lName Student's Last Name
+	 * @param mInitial Student's Middle Initial
+	 * @param id Student's university id
+	 * @param startDate University Start Date
+	 * @param endDate University End Date
+	 */
+	public Student(String fName, String lName, String mInitial, int id, Date startDate, Date endDate)
+	{
+		firstName = fName;
+		lastName = lName;
+		middleInitial = mInitial;
+		universityId = id;
+		universityStartDate = startDate;
+		universityEndDate = endDate;
+	}
+	
+	/**
+	 * Constructor
+	 * @param fName Student's First Name
+	 * @param lName Student's Last Name
+	 * @param mInitial Student's Middle Initial
+	 * @param id Student's university id
+	 */
+	public Student(String fName, String lName, String mInitial, int id)
+	{
+		firstName = fName;
+		lastName = lName;
+		middleInitial = mInitial;
+		universityId = id;
+	}
+}
